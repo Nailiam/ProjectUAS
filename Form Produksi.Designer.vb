@@ -32,19 +32,19 @@ Partial Class Form_Produksi
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtjumlah = New System.Windows.Forms.TextBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.txtkerbadan = New System.Windows.Forms.TextBox()
+        Me.txtkerpintu = New System.Windows.Forms.TextBox()
+        Me.txtroda = New System.Windows.Forms.TextBox()
+        Me.txtkursi = New System.Windows.Forms.TextBox()
+        Me.txtmesin = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.lvdisplay = New System.Windows.Forms.ListView()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -146,62 +146,63 @@ Partial Class Form_Produksi
         Me.Label10.TabIndex = 9
         Me.Label10.Text = "Mesin"
         '
-        'TextBox1
+        'txtjumlah
         '
-        Me.TextBox1.Location = New System.Drawing.Point(178, 99)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(114, 20)
-        Me.TextBox1.TabIndex = 10
+        Me.txtjumlah.Location = New System.Drawing.Point(178, 99)
+        Me.txtjumlah.Name = "txtjumlah"
+        Me.txtjumlah.Size = New System.Drawing.Size(114, 20)
+        Me.txtjumlah.TabIndex = 10
         '
         'DateTimePicker1
         '
         Me.DateTimePicker1.Location = New System.Drawing.Point(126, 32)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(146, 20)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(136, 20)
         Me.DateTimePicker1.TabIndex = 11
         '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Mobil Sport", "Mobil Sedan"})
         Me.ComboBox1.Location = New System.Drawing.Point(178, 65)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(114, 21)
         Me.ComboBox1.TabIndex = 12
         '
-        'TextBox2
+        'txtkerbadan
         '
-        Me.TextBox2.Location = New System.Drawing.Point(111, 171)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(114, 20)
-        Me.TextBox2.TabIndex = 13
+        Me.txtkerbadan.Location = New System.Drawing.Point(111, 171)
+        Me.txtkerbadan.Name = "txtkerbadan"
+        Me.txtkerbadan.Size = New System.Drawing.Size(114, 20)
+        Me.txtkerbadan.TabIndex = 13
         '
-        'TextBox3
+        'txtkerpintu
         '
-        Me.TextBox3.Location = New System.Drawing.Point(111, 200)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(114, 20)
-        Me.TextBox3.TabIndex = 14
+        Me.txtkerpintu.Location = New System.Drawing.Point(111, 200)
+        Me.txtkerpintu.Name = "txtkerpintu"
+        Me.txtkerpintu.Size = New System.Drawing.Size(114, 20)
+        Me.txtkerpintu.TabIndex = 14
         '
-        'TextBox4
+        'txtroda
         '
-        Me.TextBox4.Location = New System.Drawing.Point(111, 232)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(114, 20)
-        Me.TextBox4.TabIndex = 15
+        Me.txtroda.Location = New System.Drawing.Point(111, 232)
+        Me.txtroda.Name = "txtroda"
+        Me.txtroda.Size = New System.Drawing.Size(114, 20)
+        Me.txtroda.TabIndex = 15
         '
-        'TextBox5
+        'txtkursi
         '
-        Me.TextBox5.Location = New System.Drawing.Point(111, 260)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(114, 20)
-        Me.TextBox5.TabIndex = 16
+        Me.txtkursi.Location = New System.Drawing.Point(111, 260)
+        Me.txtkursi.Name = "txtkursi"
+        Me.txtkursi.Size = New System.Drawing.Size(114, 20)
+        Me.txtkursi.TabIndex = 16
         '
-        'TextBox6
+        'txtmesin
         '
-        Me.TextBox6.Location = New System.Drawing.Point(111, 288)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(114, 20)
-        Me.TextBox6.TabIndex = 17
+        Me.txtmesin.Location = New System.Drawing.Point(111, 288)
+        Me.txtmesin.Name = "txtmesin"
+        Me.txtmesin.Size = New System.Drawing.Size(114, 20)
+        Me.txtmesin.TabIndex = 17
         '
         'Button1
         '
@@ -239,18 +240,18 @@ Partial Class Form_Produksi
         Me.Button4.Text = "Next Gudang Barang Jadi"
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'ListView1
+        'lvdisplay
         '
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8})
-        Me.ListView1.FullRowSelect = True
-        Me.ListView1.GridLines = True
-        Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(312, 89)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(336, 176)
-        Me.ListView1.TabIndex = 22
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        Me.ListView1.View = System.Windows.Forms.View.Details
+        Me.lvdisplay.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8})
+        Me.lvdisplay.FullRowSelect = True
+        Me.lvdisplay.GridLines = True
+        Me.lvdisplay.HideSelection = False
+        Me.lvdisplay.Location = New System.Drawing.Point(312, 89)
+        Me.lvdisplay.Name = "lvdisplay"
+        Me.lvdisplay.Size = New System.Drawing.Size(336, 176)
+        Me.lvdisplay.TabIndex = 22
+        Me.lvdisplay.UseCompatibleStateImageBehavior = False
+        Me.lvdisplay.View = System.Windows.Forms.View.Details
         '
         'ColumnHeader1
         '
@@ -265,47 +266,51 @@ Partial Class Form_Produksi
         'ColumnHeader3
         '
         Me.ColumnHeader3.Text = "Jumlah "
-        Me.ColumnHeader3.Width = 54
+        Me.ColumnHeader3.Width = 53
         '
         'ColumnHeader4
         '
         Me.ColumnHeader4.Text = "Stok kerangka Badan"
-        Me.ColumnHeader4.Width = 99
+        Me.ColumnHeader4.Width = 120
         '
         'ColumnHeader5
         '
         Me.ColumnHeader5.Text = "Stok Kerangka Pintu"
+        Me.ColumnHeader5.Width = 116
         '
         'ColumnHeader6
         '
         Me.ColumnHeader6.Text = "Stok Roda"
+        Me.ColumnHeader6.Width = 89
         '
         'ColumnHeader7
         '
         Me.ColumnHeader7.Text = "Stok Kursi"
+        Me.ColumnHeader7.Width = 79
         '
         'ColumnHeader8
         '
         Me.ColumnHeader8.Text = "Stok Mesin"
+        Me.ColumnHeader8.Width = 90
         '
         'Form_Produksi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(660, 317)
-        Me.Controls.Add(Me.ListView1)
+        Me.Controls.Add(Me.lvdisplay)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtmesin)
+        Me.Controls.Add(Me.txtkursi)
+        Me.Controls.Add(Me.txtroda)
+        Me.Controls.Add(Me.txtkerpintu)
+        Me.Controls.Add(Me.txtkerbadan)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtjumlah)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
@@ -333,19 +338,19 @@ Partial Class Form_Produksi
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtjumlah As TextBox
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents txtkerbadan As TextBox
+    Friend WithEvents txtkerpintu As TextBox
+    Friend WithEvents txtroda As TextBox
+    Friend WithEvents txtkursi As TextBox
+    Friend WithEvents txtmesin As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents ListView1 As ListView
+    Friend WithEvents lvdisplay As ListView
     Friend WithEvents ColumnHeader1 As ColumnHeader
     Friend WithEvents ColumnHeader2 As ColumnHeader
     Friend WithEvents ColumnHeader3 As ColumnHeader
