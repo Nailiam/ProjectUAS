@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 C:\Users\ASUS\Documents\pemrograman\ProjectUAS\obj\Debug\ProjectUAS.vbprojAssemblyReference.cache
 C:\Users\ASUS\Documents\pemrograman\ProjectUAS\obj\Debug\ProjectUAS.Form_Gudang_Barang_Jadi.resources
 C:\Users\ASUS\Documents\pemrograman\ProjectUAS\obj\Debug\ProjectUAS.Menu_Utama.resources
 C:\Users\ASUS\Documents\pemrograman\ProjectUAS\obj\Debug\ProjectUAS.Resources.resources
 C:\Users\ASUS\Documents\pemrograman\ProjectUAS\obj\Debug\ProjectUAS.vbproj.GenerateResource.cache
+=======
+E:\Prokom UAS\ProjectUAS\ProjectUAS\obj\Debug\ProjectUAS.vbprojAssemblyReference.cache
+E:\Prokom UAS\ProjectUAS\ProjectUAS\obj\Debug\ProjectUAS.Form_Gudang_Barang_Jadi.resources
+E:\Prokom UAS\ProjectUAS\ProjectUAS\obj\Debug\ProjectUAS.Menu_Utama.resources
+E:\Prokom UAS\ProjectUAS\ProjectUAS\obj\Debug\ProjectUAS.Resources.resources
+E:\Prokom UAS\ProjectUAS\ProjectUAS\obj\Debug\ProjectUAS.vbproj.GenerateResource.cache
+>>>>>>> c00eb566ddf9c6d59e1cbd37ca67b67ae394e6c5
