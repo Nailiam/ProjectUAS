@@ -16,4 +16,9 @@
     Private Sub Btninfokeluar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btninfokeluar.Click
         ListView1.Items.Add(New ListViewItem(New String() {GudangBJ.Log_badan, GudangBJ.Log_pintu, GudangBJ.Log_roda, GudangBJ.Log_kursi, GudangBJ.Log_mesin}))
     End Sub
+
+    Private Sub btnmenu_Click(sender As Object, e As EventArgs) Handles btnmenu.Click
+        Menu_Utama.Show()
+        Me.Close()
+    End Sub
 End Class
