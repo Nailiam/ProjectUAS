@@ -28,7 +28,7 @@ Partial Class Menu_Utama
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(554, 310)
         Me.Name = "Menu_Utama"
         Me.Text = "Menu_Utama"
         Me.ResumeLayout(False)
