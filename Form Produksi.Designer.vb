@@ -35,11 +35,11 @@ Partial Class Form_Produksi
         Me.txtjumlah = New System.Windows.Forms.TextBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.txtkerbadan = New System.Windows.Forms.TextBox()
-        Me.txtkerpintu = New System.Windows.Forms.TextBox()
-        Me.txtroda = New System.Windows.Forms.TextBox()
-        Me.txtkursi = New System.Windows.Forms.TextBox()
-        Me.txtmesin = New System.Windows.Forms.TextBox()
+        Me.Pro_badan = New System.Windows.Forms.TextBox()
+        Me.Pro_pintu = New System.Windows.Forms.TextBox()
+        Me.Pro_roda = New System.Windows.Forms.TextBox()
+        Me.Pro_kursi = New System.Windows.Forms.TextBox()
+        Me.Pro_mesin = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -53,6 +53,7 @@ Partial Class Form_Produksi
         Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -169,44 +170,44 @@ Partial Class Form_Produksi
         Me.ComboBox1.Size = New System.Drawing.Size(114, 21)
         Me.ComboBox1.TabIndex = 12
         '
-        'txtkerbadan
+        'Pro_badan
         '
-        Me.txtkerbadan.Location = New System.Drawing.Point(111, 171)
-        Me.txtkerbadan.Name = "txtkerbadan"
-        Me.txtkerbadan.Size = New System.Drawing.Size(114, 20)
-        Me.txtkerbadan.TabIndex = 13
+        Me.Pro_badan.Location = New System.Drawing.Point(111, 171)
+        Me.Pro_badan.Name = "Pro_badan"
+        Me.Pro_badan.Size = New System.Drawing.Size(114, 20)
+        Me.Pro_badan.TabIndex = 13
         '
-        'txtkerpintu
+        'Pro_pintu
         '
-        Me.txtkerpintu.Location = New System.Drawing.Point(111, 200)
-        Me.txtkerpintu.Name = "txtkerpintu"
-        Me.txtkerpintu.Size = New System.Drawing.Size(114, 20)
-        Me.txtkerpintu.TabIndex = 14
+        Me.Pro_pintu.Location = New System.Drawing.Point(111, 200)
+        Me.Pro_pintu.Name = "Pro_pintu"
+        Me.Pro_pintu.Size = New System.Drawing.Size(114, 20)
+        Me.Pro_pintu.TabIndex = 14
         '
-        'txtroda
+        'Pro_roda
         '
-        Me.txtroda.Location = New System.Drawing.Point(111, 232)
-        Me.txtroda.Name = "txtroda"
-        Me.txtroda.Size = New System.Drawing.Size(114, 20)
-        Me.txtroda.TabIndex = 15
+        Me.Pro_roda.Location = New System.Drawing.Point(111, 232)
+        Me.Pro_roda.Name = "Pro_roda"
+        Me.Pro_roda.Size = New System.Drawing.Size(114, 20)
+        Me.Pro_roda.TabIndex = 15
         '
-        'txtkursi
+        'Pro_kursi
         '
-        Me.txtkursi.Location = New System.Drawing.Point(111, 260)
-        Me.txtkursi.Name = "txtkursi"
-        Me.txtkursi.Size = New System.Drawing.Size(114, 20)
-        Me.txtkursi.TabIndex = 16
+        Me.Pro_kursi.Location = New System.Drawing.Point(111, 260)
+        Me.Pro_kursi.Name = "Pro_kursi"
+        Me.Pro_kursi.Size = New System.Drawing.Size(114, 20)
+        Me.Pro_kursi.TabIndex = 16
         '
-        'txtmesin
+        'Pro_mesin
         '
-        Me.txtmesin.Location = New System.Drawing.Point(111, 288)
-        Me.txtmesin.Name = "txtmesin"
-        Me.txtmesin.Size = New System.Drawing.Size(114, 20)
-        Me.txtmesin.TabIndex = 17
+        Me.Pro_mesin.Location = New System.Drawing.Point(111, 288)
+        Me.Pro_mesin.Name = "Pro_mesin"
+        Me.Pro_mesin.Size = New System.Drawing.Size(114, 20)
+        Me.Pro_mesin.TabIndex = 17
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(556, 18)
+        Me.Button1.Location = New System.Drawing.Point(584, 9)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(64, 33)
         Me.Button1.TabIndex = 18
@@ -215,7 +216,7 @@ Partial Class Form_Produksi
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(392, 44)
+        Me.Button2.Location = New System.Drawing.Point(462, 38)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(116, 39)
         Me.Button2.TabIndex = 19
@@ -293,21 +294,31 @@ Partial Class Form_Produksi
         Me.ColumnHeader8.Text = "Stok Mesin"
         Me.ColumnHeader8.Width = 90
         '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(221, 128)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(71, 30)
+        Me.Button5.TabIndex = 23
+        Me.Button5.Text = "Hitung"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
         'Form_Produksi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(660, 317)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.lvdisplay)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.txtmesin)
-        Me.Controls.Add(Me.txtkursi)
-        Me.Controls.Add(Me.txtroda)
-        Me.Controls.Add(Me.txtkerpintu)
-        Me.Controls.Add(Me.txtkerbadan)
+        Me.Controls.Add(Me.Pro_mesin)
+        Me.Controls.Add(Me.Pro_kursi)
+        Me.Controls.Add(Me.Pro_roda)
+        Me.Controls.Add(Me.Pro_pintu)
+        Me.Controls.Add(Me.Pro_badan)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.txtjumlah)
@@ -341,11 +352,11 @@ Partial Class Form_Produksi
     Friend WithEvents txtjumlah As TextBox
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents txtkerbadan As TextBox
-    Friend WithEvents txtkerpintu As TextBox
-    Friend WithEvents txtroda As TextBox
-    Friend WithEvents txtkursi As TextBox
-    Friend WithEvents txtmesin As TextBox
+    Friend WithEvents Pro_badan As TextBox
+    Friend WithEvents Pro_pintu As TextBox
+    Friend WithEvents Pro_roda As TextBox
+    Friend WithEvents Pro_kursi As TextBox
+    Friend WithEvents Pro_mesin As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
@@ -359,4 +370,5 @@ Partial Class Form_Produksi
     Friend WithEvents ColumnHeader6 As ColumnHeader
     Friend WithEvents ColumnHeader7 As ColumnHeader
     Friend WithEvents ColumnHeader8 As ColumnHeader
+    Friend WithEvents Button5 As Button
 End Class
