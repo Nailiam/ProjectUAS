@@ -59,10 +59,10 @@ Partial Class Form_Produksi
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(245, 9)
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(242, 6)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(193, 19)
+        Me.Label1.Size = New System.Drawing.Size(254, 23)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "DEPARTEMEN PRODUKSI"
         '
@@ -216,11 +216,11 @@ Partial Class Form_Produksi
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(462, 38)
+        Me.Button2.Location = New System.Drawing.Point(411, 44)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(116, 39)
         Me.Button2.TabIndex = 19
-        Me.Button2.Text = "Komponen Produksi yang Dibutuhkan"
+        Me.Button2.Text = "Cek Stok"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
@@ -307,6 +307,7 @@ Partial Class Form_Produksi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(660, 317)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.lvdisplay)
