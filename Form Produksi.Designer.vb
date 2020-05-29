@@ -164,7 +164,7 @@ Partial Class Form_Produksi
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Mobil Sport", "Mobil Sedan"})
+        Me.ComboBox1.Items.AddRange(New Object() {"mobil sport", "Mobil Sedan"})
         Me.ComboBox1.Location = New System.Drawing.Point(178, 65)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(114, 21)

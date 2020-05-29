@@ -41,11 +41,11 @@
             With objmobilsport
                 .mjenis_mobil = ComboBox1.Text
                 .mjumlah_produksi = txtjumlah.Text
-                Pro_badan.Text = .produksikerangkabadan(.mjumlah_produksi)
-                Pro_pintu.Text = .produksikerangkapintu(.mjumlah_produksi)
-                Pro_roda.Text = .produksiroda(.mjumlah_produksi)
-                Pro_kursi.Text = .produksikursi(.mjumlah_produksi)
-                Pro_mesin.Text = .produksimesin(.mjumlah_produksi)
+                Pro_badan.Text = .produksikerangkabadan1(.mjumlah_produksi)
+                Pro_pintu.Text = .produksikerangkapintu1(.mjumlah_produksi)
+                Pro_roda.Text = .produksiroda1(.mjumlah_produksi)
+                Pro_kursi.Text = .produksikursi1(.mjumlah_produksi)
+                Pro_mesin.Text = .produksimesin1(.mjumlah_produksi)
             End With
         Else
             Dim objmobilsedan As New mobil_sedan
