@@ -1,6 +1,11 @@
 ﻿Public Class Menu_Utama
     Dim No, Nama, Hp, Alamat, Pesanan, Kode_BOM, Kode_purchasing As String
     Dim Jml_pesan, Jml_badan, Jml_pintu, Jml_roda, Jml_kursi, Jml_mesin, Baku_badan, Baku_pintu, Baku_roda, Baku_kursi, Baku_mesin, Pur_badan, Pur_pintu, Pur_roda, Pur_kursi, Pur_mesin, Total_pur, Jml_pro, Pro_badan, Pro_pintu, Pro_kursi, Pro_roda, Pro_mesin, Stok_badan, Stok_pintu, Stok_roda, Stok_kursi, Stok_mesin, Log_badan, Log_pintu, Log_roda, Log_kursi, Log_mesin As Integer
+    Dim produksi As Form_Produksi = New Form_Produksi
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Form_Produksi.Show()
+    End Sub
+
     Dim Tanggal, Tanggal_pro As Date
 
     Public Property No1 As String
@@ -182,4 +187,6 @@
             Pur_pintu = value
         End Set
     End Property
+
 End Class
+
