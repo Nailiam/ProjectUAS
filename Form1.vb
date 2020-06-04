@@ -4,6 +4,9 @@
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Form_Produksi.Show()
     End Sub
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Form_Gudang_Barang_Jadi.Show()
+    End Sub
     Public Property Stok_badan1 As Integer
         Get
             Return Stok_badan
@@ -12,11 +15,6 @@
             Stok_badan = value
         End Set
     End Property
-
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        Form_Gudang_Barang_Jadi.Show()
-    End Sub
-
     Public Property Stok_pintu1 As Integer
         Get
             Return Stok_pintu
