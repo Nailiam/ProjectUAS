@@ -2,7 +2,7 @@
     Dim tanggalproduksi As DateTime
     Dim jenismobil As String
     Dim jumlah As Integer, stokkerangkabadan As Integer, stokkerangkapintu As Integer, stokroda As Integer, stokkursi As Integer, stokmesin As Integer
-    Dim menuutama As Menu_Utama = New Menu_Utama
+
     Dim gudangbarangjadi As Form_Gudang_Barang_Jadi = New Form_Gudang_Barang_Jadi
     Dim gudangbahanbaku As Gudang_bahan_baku = New Gudang_bahan_baku
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click

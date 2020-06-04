@@ -12,3 +12,12 @@ E:\Prokom UAS\ProjectUAS\ProjectUAS\obj\Debug\ProjectUAS.Resources.resources
 E:\Prokom UAS\ProjectUAS\ProjectUAS\obj\Debug\ProjectUAS.vbproj.GenerateResource.cache
 >>>>>>> c00eb566ddf9c6d59e1cbd37ca67b67ae394e6c5
 C:\Users\ASUS\Documents\pemrograman\ProjectUAS\obj\Debug\ProjectUAS.Form_Produksi.resources
+E:\Prokom UAS\ProjectUAS\ProjectUAS\bin\Debug\ProjectUAS.exe.config
+E:\Prokom UAS\ProjectUAS\ProjectUAS\bin\Debug\ProjectUAS.exe
+E:\Prokom UAS\ProjectUAS\ProjectUAS\bin\Debug\ProjectUAS.pdb
+E:\Prokom UAS\ProjectUAS\ProjectUAS\bin\Debug\ProjectUAS.xml
+E:\Prokom UAS\ProjectUAS\ProjectUAS\obj\Debug\ProjectUAS.Form_Produksi.resources
+E:\Prokom UAS\ProjectUAS\ProjectUAS\obj\Debug\ProjectUAS.Gudang_bahan_baku.resources
+E:\Prokom UAS\ProjectUAS\ProjectUAS\obj\Debug\ProjectUAS.exe
+E:\Prokom UAS\ProjectUAS\ProjectUAS\obj\Debug\ProjectUAS.xml
+E:\Prokom UAS\ProjectUAS\ProjectUAS\obj\Debug\ProjectUAS.pdb
