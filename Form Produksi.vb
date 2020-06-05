@@ -18,19 +18,6 @@
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Menu_Utama.Show()
     End Sub
-
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        tanggalproduksi = DateTimePicker1.Text
-        jenismobil = ComboBox1.Text
-        jumlah = txtjumlah.Text
-        stokkerangkabadan = Pro_badan.Text
-        stokkerangkapintu = Pro_pintu.Text
-        stokroda = Pro_roda.Text
-        stokkursi = Pro_kursi.Text
-        stokmesin = Pro_mesin.Text
-        lvdisplay.Items.Add(New ListViewItem(New String() {tanggalproduksi, jenismobil, jumlah, stokkerangkabadan, stokkerangkapintu, stokroda, stokkursi, stokmesin}))
-    End Sub
-
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         Gudang_bahan_baku.Show()
     End Sub
@@ -38,9 +25,13 @@
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         If ComboBox1.Text = "mobil sport" Then
             Dim objmobilsport As New mobil_sport
+            Dim jumlah_produksi As Integer
+            For Each pesan In clsPemesanan.database
+                jumlah_produksi = pesan.mobilsport
+            Next
+            txtjumlah.Text = jumlah_produksi
             With objmobilsport
                 .mjenis_mobil = ComboBox1.Text
-                .mjumlah_produksi = txtjumlah.Text
                 Pro_badan.Text = .produksikerangkabadan1(.mjumlah_produksi)
                 Pro_pintu.Text = .produksikerangkapintu1(.mjumlah_produksi)
                 Pro_roda.Text = .produksiroda1(.mjumlah_produksi)
@@ -49,9 +40,13 @@
             End With
         Else
             Dim objmobilsedan As New mobil_sedan
+            Dim jumlah_produksi As Integer
+            For Each pesan In clsPemesanan.database
+                jumlah_produksi = pesan.mobilsedan
+            Next
+            txtjumlah.Text = jumlah_produksi
             With objmobilsedan
                 .mjenis_mobil = ComboBox1.Text
-                .mjumlah_produksi = txtjumlah.Text
                 Pro_badan.Text = .produksikerangkabadan(.mjumlah_produksi)
                 Pro_pintu.Text = .produksikerangkapintu(.mjumlah_produksi)
                 Pro_roda.Text = .produksiroda(.mjumlah_produksi)
