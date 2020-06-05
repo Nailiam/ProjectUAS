@@ -52,6 +52,7 @@ Partial Class BOM
         Me.txtkursisd = New System.Windows.Forms.TextBox()
         Me.txtmesinsd = New System.Windows.Forms.TextBox()
         Me.txtpintusp = New System.Windows.Forms.TextBox()
+        Me.Label17 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -298,11 +299,22 @@ Partial Class BOM
         Me.txtpintusp.Size = New System.Drawing.Size(120, 20)
         Me.txtpintusp.TabIndex = 29
         '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(333, 7)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(177, 21)
+        Me.Label17.TabIndex = 30
+        Me.Label17.Text = "BILL OF MATERIAL"
+        '
         'BOM
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.txtpintusp)
         Me.Controls.Add(Me.txtmesinsd)
         Me.Controls.Add(Me.txtkursisd)
@@ -370,4 +382,5 @@ Partial Class BOM
     Friend WithEvents txtkursisd As TextBox
     Friend WithEvents txtmesinsd As TextBox
     Friend WithEvents txtpintusp As TextBox
+    Friend WithEvents Label17 As Label
 End Class

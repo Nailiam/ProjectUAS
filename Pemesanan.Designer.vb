@@ -44,12 +44,13 @@ Partial Class Pemesanan
         Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(40, 28)
+        Me.Label1.Location = New System.Drawing.Point(36, 59)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(105, 13)
         Me.Label1.TabIndex = 0
@@ -58,7 +59,7 @@ Partial Class Pemesanan
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(357, 106)
+        Me.Label4.Location = New System.Drawing.Point(357, 126)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(66, 13)
         Me.Label4.TabIndex = 3
@@ -67,7 +68,7 @@ Partial Class Pemesanan
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(357, 66)
+        Me.Label5.Location = New System.Drawing.Point(357, 83)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(60, 13)
         Me.Label5.TabIndex = 4
@@ -76,7 +77,7 @@ Partial Class Pemesanan
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(357, 28)
+        Me.Label6.Location = New System.Drawing.Point(357, 52)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(145, 13)
         Me.Label6.TabIndex = 5
@@ -85,7 +86,7 @@ Partial Class Pemesanan
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(36, 147)
+        Me.Label7.Location = New System.Drawing.Point(36, 173)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(86, 13)
         Me.Label7.TabIndex = 6
@@ -94,7 +95,7 @@ Partial Class Pemesanan
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(40, 106)
+        Me.Label8.Location = New System.Drawing.Point(36, 133)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(82, 13)
         Me.Label8.TabIndex = 7
@@ -103,7 +104,7 @@ Partial Class Pemesanan
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(40, 66)
+        Me.Label9.Location = New System.Drawing.Point(40, 99)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(50, 13)
         Me.Label9.TabIndex = 8
@@ -111,42 +112,42 @@ Partial Class Pemesanan
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(171, 21)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(171, 52)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(162, 20)
         Me.DateTimePicker1.TabIndex = 9
         '
         'txtkode
         '
-        Me.txtkode.Location = New System.Drawing.Point(171, 59)
+        Me.txtkode.Location = New System.Drawing.Point(171, 92)
         Me.txtkode.Name = "txtkode"
         Me.txtkode.Size = New System.Drawing.Size(126, 20)
         Me.txtkode.TabIndex = 10
         '
         'txtalamat
         '
-        Me.txtalamat.Location = New System.Drawing.Point(171, 144)
+        Me.txtalamat.Location = New System.Drawing.Point(171, 166)
         Me.txtalamat.Name = "txtalamat"
         Me.txtalamat.Size = New System.Drawing.Size(126, 20)
         Me.txtalamat.TabIndex = 11
         '
         'txtnama
         '
-        Me.txtnama.Location = New System.Drawing.Point(171, 99)
+        Me.txtnama.Location = New System.Drawing.Point(171, 126)
         Me.txtnama.Name = "txtnama"
         Me.txtnama.Size = New System.Drawing.Size(126, 20)
         Me.txtnama.TabIndex = 12
         '
         'txtsport
         '
-        Me.txtsport.Location = New System.Drawing.Point(429, 59)
+        Me.txtsport.Location = New System.Drawing.Point(429, 83)
         Me.txtsport.Name = "txtsport"
         Me.txtsport.Size = New System.Drawing.Size(121, 20)
         Me.txtsport.TabIndex = 13
         '
         'txtsedan
         '
-        Me.txtsedan.Location = New System.Drawing.Point(429, 99)
+        Me.txtsedan.Location = New System.Drawing.Point(429, 119)
         Me.txtsedan.Name = "txtsedan"
         Me.txtsedan.Size = New System.Drawing.Size(121, 20)
         Me.txtsedan.TabIndex = 14
@@ -206,11 +207,22 @@ Partial Class Pemesanan
         Me.Button2.Text = "Next > BOM"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(272, 9)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(122, 21)
+        Me.Label2.TabIndex = 18
+        Me.Label2.Text = "PEMESANAN"
+        '
         'Pemesanan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(681, 446)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ListView1)
@@ -256,4 +268,5 @@ Partial Class Pemesanan
     Friend WithEvents ColumnHeader6 As ColumnHeader
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents Label2 As Label
 End Class
