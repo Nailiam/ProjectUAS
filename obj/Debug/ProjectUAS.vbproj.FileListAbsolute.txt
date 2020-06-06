@@ -21,3 +21,19 @@ E:\Prokom UAS\ProjectUAS\ProjectUAS\obj\Debug\ProjectUAS.Gudang_bahan_baku.resou
 E:\Prokom UAS\ProjectUAS\ProjectUAS\obj\Debug\ProjectUAS.exe
 E:\Prokom UAS\ProjectUAS\ProjectUAS\obj\Debug\ProjectUAS.xml
 E:\Prokom UAS\ProjectUAS\ProjectUAS\obj\Debug\ProjectUAS.pdb
+C:\Users\ASUS\Documents\GitHub\ProjectUAS\bin\Debug\ProjectUAS.exe.config
+C:\Users\ASUS\Documents\GitHub\ProjectUAS\bin\Debug\ProjectUAS.exe
+C:\Users\ASUS\Documents\GitHub\ProjectUAS\bin\Debug\ProjectUAS.pdb
+C:\Users\ASUS\Documents\GitHub\ProjectUAS\bin\Debug\ProjectUAS.xml
+C:\Users\ASUS\Documents\GitHub\ProjectUAS\obj\Debug\ProjectUAS.vbprojAssemblyReference.cache
+C:\Users\ASUS\Documents\GitHub\ProjectUAS\obj\Debug\ProjectUAS.Form_Gudang_Barang_Jadi.resources
+C:\Users\ASUS\Documents\GitHub\ProjectUAS\obj\Debug\ProjectUAS.Form_Produksi.resources
+C:\Users\ASUS\Documents\GitHub\ProjectUAS\obj\Debug\ProjectUAS.Menu_Utama.resources
+C:\Users\ASUS\Documents\GitHub\ProjectUAS\obj\Debug\ProjectUAS.Gudang_bahan_baku.resources
+C:\Users\ASUS\Documents\GitHub\ProjectUAS\obj\Debug\ProjectUAS.Resources.resources
+C:\Users\ASUS\Documents\GitHub\ProjectUAS\obj\Debug\ProjectUAS.vbproj.GenerateResource.cache
+C:\Users\ASUS\Documents\GitHub\ProjectUAS\obj\Debug\ProjectUAS.exe
+C:\Users\ASUS\Documents\GitHub\ProjectUAS\obj\Debug\ProjectUAS.xml
+C:\Users\ASUS\Documents\GitHub\ProjectUAS\obj\Debug\ProjectUAS.pdb
+C:\Users\ASUS\Documents\GitHub\ProjectUAS\obj\Debug\ProjectUAS.Pemesanan.resources
+C:\Users\ASUS\Documents\GitHub\ProjectUAS\obj\Debug\ProjectUAS.BOM.resources

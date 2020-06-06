@@ -15,6 +15,11 @@
             Stok_badan = value
         End Set
     End Property
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Pemesanan.Show()
+    End Sub
+
     Public Property Stok_pintu1 As Integer
         Get
             Return Stok_pintu

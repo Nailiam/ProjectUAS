@@ -41,18 +41,8 @@ Partial Class Form_Produksi
         Me.Pro_kursi = New System.Windows.Forms.TextBox()
         Me.Pro_mesin = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.lvdisplay = New System.Windows.Forms.ListView()
-        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Button5 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -60,7 +50,7 @@ Partial Class Form_Produksi
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(242, 6)
+        Me.Label1.Location = New System.Drawing.Point(217, 6)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(254, 23)
         Me.Label1.TabIndex = 0
@@ -214,18 +204,9 @@ Partial Class Form_Produksi
         Me.Button1.Text = "Menu"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(411, 44)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(116, 39)
-        Me.Button2.TabIndex = 19
-        Me.Button2.Text = "Cek Stok"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(354, 271)
+        Me.Button3.Location = New System.Drawing.Point(348, 145)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(114, 34)
         Me.Button3.TabIndex = 20
@@ -234,65 +215,12 @@ Partial Class Form_Produksi
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(542, 271)
+        Me.Button4.Location = New System.Drawing.Point(348, 196)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(95, 34)
+        Me.Button4.Size = New System.Drawing.Size(114, 34)
         Me.Button4.TabIndex = 21
         Me.Button4.Text = "Next Gudang Barang Jadi"
         Me.Button4.UseVisualStyleBackColor = True
-        '
-        'lvdisplay
-        '
-        Me.lvdisplay.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8})
-        Me.lvdisplay.FullRowSelect = True
-        Me.lvdisplay.GridLines = True
-        Me.lvdisplay.HideSelection = False
-        Me.lvdisplay.Location = New System.Drawing.Point(312, 89)
-        Me.lvdisplay.Name = "lvdisplay"
-        Me.lvdisplay.Size = New System.Drawing.Size(336, 176)
-        Me.lvdisplay.TabIndex = 22
-        Me.lvdisplay.UseCompatibleStateImageBehavior = False
-        Me.lvdisplay.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader1
-        '
-        Me.ColumnHeader1.Text = "Tanggal Produksi"
-        Me.ColumnHeader1.Width = 96
-        '
-        'ColumnHeader2
-        '
-        Me.ColumnHeader2.Text = "Jenis Mobil"
-        Me.ColumnHeader2.Width = 69
-        '
-        'ColumnHeader3
-        '
-        Me.ColumnHeader3.Text = "Jumlah "
-        Me.ColumnHeader3.Width = 53
-        '
-        'ColumnHeader4
-        '
-        Me.ColumnHeader4.Text = "Stok kerangka Badan"
-        Me.ColumnHeader4.Width = 120
-        '
-        'ColumnHeader5
-        '
-        Me.ColumnHeader5.Text = "Stok Kerangka Pintu"
-        Me.ColumnHeader5.Width = 116
-        '
-        'ColumnHeader6
-        '
-        Me.ColumnHeader6.Text = "Stok Roda"
-        Me.ColumnHeader6.Width = 89
-        '
-        'ColumnHeader7
-        '
-        Me.ColumnHeader7.Text = "Stok Kursi"
-        Me.ColumnHeader7.Width = 79
-        '
-        'ColumnHeader8
-        '
-        Me.ColumnHeader8.Text = "Stok Mesin"
-        Me.ColumnHeader8.Width = 90
         '
         'Button5
         '
@@ -310,10 +238,8 @@ Partial Class Form_Produksi
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(660, 317)
         Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.lvdisplay)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Pro_mesin)
         Me.Controls.Add(Me.Pro_kursi)
@@ -359,17 +285,7 @@ Partial Class Form_Produksi
     Friend WithEvents Pro_kursi As TextBox
     Friend WithEvents Pro_mesin As TextBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents lvdisplay As ListView
-    Friend WithEvents ColumnHeader1 As ColumnHeader
-    Friend WithEvents ColumnHeader2 As ColumnHeader
-    Friend WithEvents ColumnHeader3 As ColumnHeader
-    Friend WithEvents ColumnHeader4 As ColumnHeader
-    Friend WithEvents ColumnHeader5 As ColumnHeader
-    Friend WithEvents ColumnHeader6 As ColumnHeader
-    Friend WithEvents ColumnHeader7 As ColumnHeader
-    Friend WithEvents ColumnHeader8 As ColumnHeader
     Friend WithEvents Button5 As Button
 End Class
