@@ -25,6 +25,5 @@
         txtalamat.Clear()
         txtsport.Clear()
         txtsedan.Clear()
-        ListView1.Items.Clear()
     End Sub
 End Class

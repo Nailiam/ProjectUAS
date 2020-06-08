@@ -45,6 +45,9 @@ Partial Class Form_Produksi
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.SuspendLayout()
         '
         'Label1
@@ -207,7 +210,7 @@ Partial Class Form_Produksi
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(509, 232)
+        Me.Button3.Location = New System.Drawing.Point(508, 252)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(114, 34)
         Me.Button3.TabIndex = 20
@@ -216,7 +219,7 @@ Partial Class Form_Produksi
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(330, 232)
+        Me.Button4.Location = New System.Drawing.Point(304, 246)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(114, 34)
         Me.Button4.TabIndex = 21
@@ -234,12 +237,35 @@ Partial Class Form_Produksi
         '
         'ListView1
         '
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader2, Me.ColumnHeader1})
+        Me.ListView1.FullRowSelect = True
+        Me.ListView1.GridLines = True
         Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(406, 66)
+        Me.ListView1.Location = New System.Drawing.Point(401, 99)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(122, 124)
+        Me.ListView1.Size = New System.Drawing.Size(178, 124)
         Me.ListView1.TabIndex = 24
         Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader2
+        '
+        Me.ColumnHeader2.Text = "Jenis Mobil"
+        Me.ColumnHeader2.Width = 65
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(429, 38)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(85, 39)
+        Me.Button2.TabIndex = 25
+        Me.Button2.Text = "Buat Pesanan"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "Status Pemesanan"
+        Me.ColumnHeader1.Width = 109
         '
         'Form_Produksi
         '
@@ -247,6 +273,7 @@ Partial Class Form_Produksi
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(660, 317)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
@@ -300,4 +327,7 @@ Partial Class Form_Produksi
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents ListView1 As ListView
+    Friend WithEvents ColumnHeader2 As ColumnHeader
+    Friend WithEvents Button2 As Button
+    Friend WithEvents ColumnHeader1 As ColumnHeader
 End Class
