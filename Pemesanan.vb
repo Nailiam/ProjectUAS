@@ -18,4 +18,13 @@
     Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
         BOM.Show()
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        txtkode.Clear()
+        txtnama.Clear()
+        txtalamat.Clear()
+        txtsport.Clear()
+        txtsedan.Clear()
+        ListView1.Items.Clear()
+    End Sub
 End Class

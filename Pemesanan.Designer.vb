@@ -45,6 +45,7 @@ Partial Class Pemesanan
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -191,7 +192,7 @@ Partial Class Pemesanan
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(377, 173)
+        Me.Button1.Location = New System.Drawing.Point(347, 173)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(124, 43)
         Me.Button1.TabIndex = 16
@@ -217,11 +218,21 @@ Partial Class Pemesanan
         Me.Label2.TabIndex = 18
         Me.Label2.Text = "PEMESANAN"
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(516, 173)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(107, 43)
+        Me.Button3.TabIndex = 19
+        Me.Button3.Text = "Clear"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Pemesanan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(681, 446)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -269,4 +280,5 @@ Partial Class Pemesanan
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Label2 As Label
+    Friend WithEvents Button3 As Button
 End Class
