@@ -87,6 +87,12 @@
     <Compile Include="Form Gudang Barang Jadi.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form Logistik.Designer.vb">
+      <DependentUpon>Form Logistik.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Logistik.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form Produksi.Designer.vb">
       <DependentUpon>Form Produksi.vb</DependentUpon>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form Gudang Barang Jadi.resx">
       <DependentUpon>Form Gudang Barang Jadi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Logistik.resx">
+      <DependentUpon>Form Logistik.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form Produksi.resx">
       <DependentUpon>Form Produksi.vb</DependentUpon>

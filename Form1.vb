@@ -20,6 +20,10 @@
         Pemesanan.Show()
     End Sub
 
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Form_Logistik.Show()
+    End Sub
+
     Public Property Stok_pintu1 As Integer
         Get
             Return Stok_pintu
