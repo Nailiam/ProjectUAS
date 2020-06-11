@@ -26,7 +26,6 @@ Partial Class Form_Produksi
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -40,14 +39,15 @@ Partial Class Form_Produksi
         Me.Pro_roda = New System.Windows.Forms.TextBox()
         Me.Pro_kursi = New System.Windows.Forms.TextBox()
         Me.Pro_mesin = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -86,15 +86,6 @@ Partial Class Form_Produksi
         Me.Label4.Size = New System.Drawing.Size(160, 13)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Jumlah Produksi Perakitan Mobil"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(16, 145)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(188, 13)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "Komponen Produksi Yang Dibutuhkan"
         '
         'Label6
         '
@@ -199,18 +190,9 @@ Partial Class Form_Produksi
         Me.Pro_mesin.Size = New System.Drawing.Size(114, 20)
         Me.Pro_mesin.TabIndex = 17
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(584, 9)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(64, 33)
-        Me.Button1.TabIndex = 18
-        Me.Button1.Text = "Menu"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(508, 252)
+        Me.Button3.Location = New System.Drawing.Point(508, 246)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(114, 34)
         Me.Button3.TabIndex = 20
@@ -243,7 +225,7 @@ Partial Class Form_Produksi
         Me.ListView1.HideSelection = False
         Me.ListView1.Location = New System.Drawing.Point(401, 99)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(178, 124)
+        Me.ListView1.Size = New System.Drawing.Size(166, 124)
         Me.ListView1.TabIndex = 24
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -253,19 +235,37 @@ Partial Class Form_Produksi
         Me.ColumnHeader2.Text = "Jenis Mobil"
         Me.ColumnHeader2.Width = 65
         '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "Status Pemesanan"
+        Me.ColumnHeader1.Width = 109
+        '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(429, 38)
+        Me.Button2.Location = New System.Drawing.Point(401, 47)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(85, 39)
         Me.Button2.TabIndex = 25
         Me.Button2.Text = "Buat Pesanan"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'ColumnHeader1
+        'Label5
         '
-        Me.ColumnHeader1.Text = "Status Pemesanan"
-        Me.ColumnHeader1.Width = 109
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(16, 145)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(188, 13)
+        Me.Label5.TabIndex = 4
+        Me.Label5.Text = "Komponen Produksi Yang Dibutuhkan"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(511, 48)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(67, 37)
+        Me.Button1.TabIndex = 26
+        Me.Button1.Text = "Save"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form_Produksi
         '
@@ -273,12 +273,12 @@ Partial Class Form_Produksi
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(660, 317)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Pro_mesin)
         Me.Controls.Add(Me.Pro_kursi)
         Me.Controls.Add(Me.Pro_roda)
@@ -308,7 +308,6 @@ Partial Class Form_Produksi
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
@@ -322,7 +321,6 @@ Partial Class Form_Produksi
     Friend WithEvents Pro_roda As TextBox
     Friend WithEvents Pro_kursi As TextBox
     Friend WithEvents Pro_mesin As TextBox
-    Friend WithEvents Button1 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
@@ -330,4 +328,6 @@ Partial Class Form_Produksi
     Friend WithEvents ColumnHeader2 As ColumnHeader
     Friend WithEvents Button2 As Button
     Friend WithEvents ColumnHeader1 As ColumnHeader
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Button1 As Button
 End Class

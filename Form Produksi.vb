@@ -2,10 +2,19 @@
     Dim tanggalproduksi As DateTime
     Dim jenismobil As String
     Dim jumlah As Integer, stokkerangkabadan As Integer, stokkerangkapintu As Integer, stokroda As Integer, stokkursi As Integer, stokmesin As Integer
-    Dim gudangbarangjadi As Form_Gudang_Barang_Jadi = New Form_Gudang_Barang_Jadi
-    Dim gudangbahanbaku As Gudang_bahan_baku = New Gudang_bahan_baku
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim save As New produksi2(txtjumlah.Text, ComboBox1.Text)
+        save.savedata()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim statuspemesanan As String
+        For Each pesan In clsPemesanan.database
+            statuspemesanan = "Dalam Proses"
+            ListView1.Items.Add(New ListViewItem(New String() {pesan.kode, statuspemesanan}))
+        Next
+        ListView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent)
     End Sub
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
@@ -16,10 +25,6 @@
         DateTimePicker1.Format = DateTimePickerFormat.Custom
         DateTimePicker1.CustomFormat = "dddd, dd/MM/yyyy"
         DateTimePicker1.Value = Format(Now)
-    End Sub
-
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Menu_Utama.Show()
     End Sub
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         Gudang_bahan_baku.Show()

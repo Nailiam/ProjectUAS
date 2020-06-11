@@ -1,4 +1,5 @@
 ﻿Public Class Produksi
+    Public Shared database As New List(Of Produksi)
     Private jumlah_produksi As Integer
     Private jenis_mobil As String
     Public Property mjumlah_produksi As Integer
@@ -17,4 +18,7 @@
             jenis_mobil = value
         End Set
     End Property
+    Sub savedata()
+        database.add(Me)
+    End Sub
 End Class

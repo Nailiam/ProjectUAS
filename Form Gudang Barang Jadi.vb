@@ -1,7 +1,6 @@
 ﻿Public Class Form_Gudang_Barang_Jadi
 
     Private Sub Btnstok_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btnstok.Click
-
         ListView1.Items.Add(New ListViewItem(New String() {}))
     End Sub
 
