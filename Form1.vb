@@ -27,6 +27,10 @@
         End Set
     End Property
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        BOM.Show()
+    End Sub
+
     Public Property Pro_pintu1 As Integer
         Get
             Return Pro_pintu

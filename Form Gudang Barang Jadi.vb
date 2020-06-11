@@ -5,8 +5,8 @@
     End Sub
 
     Private Sub Btninfomasuk_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btninfomasuk.Click
-        For Each pesan In clsPemesanan.database
-            ListView2.Items.Add(New ListViewItem(New String() {pesan.mobilsedan, pesan.mobilsport}))
+        For Each save In produksi2.database
+            ListView2.Items.Add(New ListViewItem(New String() {save.jumlahproduksi}))
         Next
     End Sub
 
@@ -18,6 +18,16 @@
 
     Private Sub Btnmenu_Click(sender As Object, e As EventArgs) Handles btnmenu.Click
         Menu_Utama.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnnext_Click(sender As Object, e As EventArgs) Handles btnnext.Click
+        Form_Logistik.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnback_Click(sender As Object, e As EventArgs) Handles btnback.Click
+        Form_Produksi.Show()
         Me.Close()
     End Sub
 End Class

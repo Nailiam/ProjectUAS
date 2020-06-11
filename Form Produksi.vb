@@ -12,7 +12,7 @@
         Dim statuspemesanan As String
         For Each pesan In clsPemesanan.database
             statuspemesanan = "Dalam Proses"
-            ListView1.Items.Add(New ListViewItem(New String() {pesan.kode, statuspemesanan}))
+            ListView1.Items.Add(New ListViewItem(New String() {ComboBox1.Text, statuspemesanan}))
         Next
         ListView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent)
     End Sub

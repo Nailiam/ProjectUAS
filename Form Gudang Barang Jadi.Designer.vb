@@ -23,8 +23,14 @@ Partial Class Form_Gudang_Barang_Jadi
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader19 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader20 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ListView2 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ListView3 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Btninfomasuk = New System.Windows.Forms.Button()
         Me.Btninfokeluar = New System.Windows.Forms.Button()
         Me.Btnstok = New System.Windows.Forms.Button()
@@ -35,12 +41,6 @@ Partial Class Form_Gudang_Barang_Jadi
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.ColumnHeader19 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader20 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.SuspendLayout()
         '
         'ListView1
@@ -56,6 +56,16 @@ Partial Class Form_Gudang_Barang_Jadi
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
         '
+        'ColumnHeader19
+        '
+        Me.ColumnHeader19.Text = "Mobil Sedan"
+        Me.ColumnHeader19.Width = 75
+        '
+        'ColumnHeader20
+        '
+        Me.ColumnHeader20.Text = "Mobil Sport"
+        Me.ColumnHeader20.Width = 67
+        '
         'ListView2
         '
         Me.ListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2})
@@ -69,6 +79,16 @@ Partial Class Form_Gudang_Barang_Jadi
         Me.ListView2.UseCompatibleStateImageBehavior = False
         Me.ListView2.View = System.Windows.Forms.View.Details
         '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "Mobil Sedan"
+        Me.ColumnHeader1.Width = 72
+        '
+        'ColumnHeader2
+        '
+        Me.ColumnHeader2.Text = "Mobil Sport"
+        Me.ColumnHeader2.Width = 69
+        '
         'ListView3
         '
         Me.ListView3.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader3, Me.ColumnHeader4})
@@ -81,6 +101,16 @@ Partial Class Form_Gudang_Barang_Jadi
         Me.ListView3.TabIndex = 2
         Me.ListView3.UseCompatibleStateImageBehavior = False
         Me.ListView3.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader3
+        '
+        Me.ColumnHeader3.Text = "Mobil Sedan"
+        Me.ColumnHeader3.Width = 74
+        '
+        'ColumnHeader4
+        '
+        Me.ColumnHeader4.Text = "Mobil Sport"
+        Me.ColumnHeader4.Width = 70
         '
         'Btninfomasuk
         '
@@ -124,7 +154,7 @@ Partial Class Form_Gudang_Barang_Jadi
         Me.btnback.Name = "btnback"
         Me.btnback.Size = New System.Drawing.Size(101, 32)
         Me.btnback.TabIndex = 7
-        Me.btnback.Text = "Back to Produksi"
+        Me.btnback.Text = "Back To Produksi"
         Me.btnback.UseVisualStyleBackColor = True
         '
         'btnnext
@@ -133,7 +163,7 @@ Partial Class Form_Gudang_Barang_Jadi
         Me.btnnext.Name = "btnnext"
         Me.btnnext.Size = New System.Drawing.Size(101, 32)
         Me.btnnext.TabIndex = 8
-        Me.btnnext.Text = "Next to Logistik"
+        Me.btnnext.Text = "Next To Logistik"
         Me.btnnext.UseVisualStyleBackColor = True
         '
         'Label1
@@ -172,36 +202,6 @@ Partial Class Form_Gudang_Barang_Jadi
         Me.Label4.Size = New System.Drawing.Size(88, 13)
         Me.Label4.TabIndex = 12
         Me.Label4.Text = "Data Stok Keluar"
-        '
-        'ColumnHeader19
-        '
-        Me.ColumnHeader19.Text = "Mobil Sedan"
-        Me.ColumnHeader19.Width = 75
-        '
-        'ColumnHeader20
-        '
-        Me.ColumnHeader20.Text = "Mobil Sport"
-        Me.ColumnHeader20.Width = 67
-        '
-        'ColumnHeader1
-        '
-        Me.ColumnHeader1.Text = "Mobil Sedan"
-        Me.ColumnHeader1.Width = 72
-        '
-        'ColumnHeader2
-        '
-        Me.ColumnHeader2.Text = "Mobil Sport"
-        Me.ColumnHeader2.Width = 69
-        '
-        'ColumnHeader3
-        '
-        Me.ColumnHeader3.Text = "Mobil Sedan"
-        Me.ColumnHeader3.Width = 74
-        '
-        'ColumnHeader4
-        '
-        Me.ColumnHeader4.Text = "Mobil Sport"
-        Me.ColumnHeader4.Width = 70
         '
         'Form_Gudang_Barang_Jadi
         '
