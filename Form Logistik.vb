@@ -24,4 +24,9 @@
             Next
         End If
     End Sub
+
+    Private Sub btnkirim_Click(sender As Object, e As EventArgs) Handles btnkirim.Click
+        Dim kirim As New clsLogistik(txtsedan.Text, txtsport.Text)
+        kirim.savedata()
+    End Sub
 End Class

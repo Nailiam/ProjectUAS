@@ -80,6 +80,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="clsbom.vb" />
+    <Compile Include="clsLogistik.vb" />
     <Compile Include="clsPemesanan.vb" />
     <Compile Include="Form Gudang Barang Jadi.Designer.vb">
       <DependentUpon>Form Gudang Barang Jadi.vb</DependentUpon>
