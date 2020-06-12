@@ -39,7 +39,6 @@ Partial Class BOM
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.txtkode = New System.Windows.Forms.TextBox()
         Me.txtbadansp = New System.Windows.Forms.TextBox()
         Me.txtsport = New System.Windows.Forms.TextBox()
         Me.txtsedan = New System.Windows.Forms.TextBox()
@@ -53,6 +52,7 @@ Partial Class BOM
         Me.txtmesinsd = New System.Windows.Forms.TextBox()
         Me.txtpintusp = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -208,13 +208,6 @@ Partial Class BOM
         Me.Button1.Text = "HITUNG"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'txtkode
-        '
-        Me.txtkode.Location = New System.Drawing.Point(137, 43)
-        Me.txtkode.Name = "txtkode"
-        Me.txtkode.Size = New System.Drawing.Size(120, 20)
-        Me.txtkode.TabIndex = 17
-        '
         'txtbadansp
         '
         Me.txtbadansp.Location = New System.Drawing.Point(340, 220)
@@ -309,11 +302,20 @@ Partial Class BOM
         Me.Label17.TabIndex = 30
         Me.Label17.Text = "BILL OF MATERIAL"
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(131, 47)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(91, 21)
+        Me.ComboBox1.TabIndex = 31
+        '
         'BOM
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.txtpintusp)
         Me.Controls.Add(Me.txtmesinsd)
@@ -327,7 +329,6 @@ Partial Class BOM
         Me.Controls.Add(Me.txtsedan)
         Me.Controls.Add(Me.txtsport)
         Me.Controls.Add(Me.txtbadansp)
-        Me.Controls.Add(Me.txtkode)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label15)
@@ -369,7 +370,6 @@ Partial Class BOM
     Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents txtkode As TextBox
     Friend WithEvents txtbadansp As TextBox
     Friend WithEvents txtsport As TextBox
     Friend WithEvents txtsedan As TextBox
@@ -383,4 +383,5 @@ Partial Class BOM
     Friend WithEvents txtmesinsd As TextBox
     Friend WithEvents txtpintusp As TextBox
     Friend WithEvents Label17 As Label
+    Friend WithEvents ComboBox1 As ComboBox
 End Class
