@@ -32,8 +32,8 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim statuspemesanan As String
         For Each pesan In clsPemesanan.database
-            statuspemesanan = "Dalam Proses"
-            ListView1.Items.Add(New ListViewItem(New String() {ComboBox1.Text, statuspemesanan}))
+            statuspemesanan = "Sudah Diproduksi"
+            ListView1.Items.Add(New ListViewItem(New String() {pesan.kode, statuspemesanan}))
         Next
         ListView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent)
     End Sub

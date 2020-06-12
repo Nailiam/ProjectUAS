@@ -247,7 +247,7 @@ Partial Class Form_Produksi
         '
         'ColumnHeader2
         '
-        Me.ColumnHeader2.Text = "Jenis Mobil"
+        Me.ColumnHeader2.Text = "Kode PO"
         Me.ColumnHeader2.Width = 65
         '
         'ColumnHeader1
