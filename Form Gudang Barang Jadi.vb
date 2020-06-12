@@ -6,7 +6,7 @@
 
     Private Sub Btninfomasuk_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btninfomasuk.Click
         For Each save In produksi2.database
-            ListView2.Items.Add(New ListViewItem(New String() {save.jumlahproduksi}))
+            ListView2.Items.Add(New ListViewItem(New String() {save.jumlahsedan, save.jumlahsport}))
         Next
     End Sub
 

@@ -1,10 +1,10 @@
 ﻿Public Class produksi2
     Public Shared database As New List(Of produksi2)
-    Public Property jumlahproduksi As Integer
-    Public Property jenismobil As String
-    Sub New(jmlproduksi As Integer, jnsmobil As String)
-        jumlahproduksi = jmlproduksi
-        jenismobil = jnsmobil
+    Public Property jumlahsedan As Integer
+    Public Property jumlahsport As Integer
+    Sub New(jmlsedan As Integer, jmlsport As Integer)
+        jumlahsedan = jmlsedan
+        jumlahsport = jmlsport
     End Sub
     Sub savedata()
         database.Add(Me)
