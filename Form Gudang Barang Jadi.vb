@@ -1,7 +1,18 @@
 ﻿Public Class Form_Gudang_Barang_Jadi
-
+    Private Stok As New Menu_Utama
     Private Sub Btnstok_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btnstok.Click
-        ListView1.Items.Add(New ListViewItem(New String() {}))
+        For Each save In produksi2.database
+            Stok.Sport_masuk1 = save.jumlahsport
+            Stok.Sedan_masuk1 = save.jumlahsedan
+        Next
+        For Each kirim In clsLogistik.database
+            Stok.Sport_keluar1 = kirim.jmlsport
+            Stok.Sedan_keluar1 = kirim.jmlsedan
+        Next
+        Stok.Stok_sport1 = Stok.Sport_masuk1 - Stok.Sport_keluar1
+        Stok.Stok_sedan1 = Stok.Sedan_masuk1 - Stok.Sedan_keluar1
+
+        ListView1.Items.Add(New ListViewItem(New String() {Stok.Stok_sedan1, Stok.Stok_sport1}))
     End Sub
 
     Private Sub Btninfomasuk_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btninfomasuk.Click

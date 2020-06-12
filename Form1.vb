@@ -1,6 +1,6 @@
 ﻿Public Class Menu_Utama
     Dim Pro_badan, Pro_pintu, Pro_kursi, Pro_roda, Pro_mesin As Integer
-
+    Dim Stok_sport, Stok_sedan, Sedan_masuk, Sport_masuk, Sedan_keluar, Sport_keluar As Integer
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Form_Produksi.Show()
     End Sub
@@ -18,12 +18,52 @@
 
 
 
-    Public Property Pro_badan1 As Integer
+    Public Property Stok_sport1 As Integer
         Get
-            Return Pro_badan
+            Return Stok_sport
         End Get
         Set(ByVal value As Integer)
-            Pro_badan = value
+            Stok_sport = value
+        End Set
+    End Property
+    Public Property Stok_sedan1 As Integer
+        Get
+            Return Stok_sedan
+        End Get
+        Set(ByVal value As Integer)
+            Stok_sedan = value
+        End Set
+    End Property
+    Public Property Sedan_masuk1 As Integer
+        Get
+            Return Sedan_masuk
+        End Get
+        Set(ByVal value As Integer)
+            Sedan_masuk = value
+        End Set
+    End Property
+    Public Property Sedan_keluar1 As Integer
+        Get
+            Return Sedan_keluar
+        End Get
+        Set(ByVal value As Integer)
+            Sedan_keluar = value
+        End Set
+    End Property
+    Public Property Sport_masuk1 As Integer
+        Get
+            Return Sport_masuk
+        End Get
+        Set(ByVal value As Integer)
+            Sport_masuk = value
+        End Set
+    End Property
+    Public Property Sport_keluar1 As Integer
+        Get
+            Return Sport_keluar
+        End Get
+        Set(ByVal value As Integer)
+            Sport_keluar = value
         End Set
     End Property
 
