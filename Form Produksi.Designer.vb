@@ -257,7 +257,7 @@ Partial Class Form_Produksi
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(482, 15)
+        Me.Button2.Location = New System.Drawing.Point(563, 24)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(85, 39)
         Me.Button2.TabIndex = 25
@@ -275,7 +275,7 @@ Partial Class Form_Produksi
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(581, 15)
+        Me.Button1.Location = New System.Drawing.Point(490, 26)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(67, 37)
         Me.Button1.TabIndex = 26
