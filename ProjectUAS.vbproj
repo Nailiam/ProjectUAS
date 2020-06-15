@@ -79,6 +79,7 @@
     <Compile Include="BOM.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="clsbaku.vb" />
     <Compile Include="clsbom.vb" />
     <Compile Include="clsLogistik.vb" />
     <Compile Include="clsPemesanan.vb" />

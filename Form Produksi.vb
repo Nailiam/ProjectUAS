@@ -4,7 +4,8 @@
     Dim jumlah As Integer, stokkerangkabadan As Integer, stokkerangkapintu As Integer, stokroda As Integer, stokkursi As Integer, stokmesin As Integer
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim save As New produksi2(txtjumlahsedan.Text, txtjmlsport.Text)
+        Dim save As New produksi2(txtjumlahsedan.Text, txtjmlsport.Text, txtbadansport.Text, txtpintusport.Text, txtrodasport.Text,
+                                  txtkursisport.Text, txtmesinsport.Text, Pro_badan.Text, Pro_pintu.Text, Pro_roda.Text, Pro_kursi.Text, Pro_mesin.Text)
         save.savedata()
     End Sub
 
