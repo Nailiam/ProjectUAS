@@ -38,4 +38,10 @@
         txtkursisd.Text = Convert.ToInt32(txtsedan.Text) * 4
         txtmesinsd.Text = Convert.ToInt32(txtsedan.Text)
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim sv As New clsbom(ComboBox1.Text, txtpintusp.Text, txtbadansp.Text, txtrodasp.Text, txtkursisp.Text, txtmesinsp.Text,
+txtpintusd.Text, txtbadansd.Text, txtrodasd.Text, txtkursisd.Text, txtmesinsd.Text)
+        sv.saveData()
+    End Sub
 End Class

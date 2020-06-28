@@ -41,3 +41,4 @@ E:\Prokom UAS\ProjectUAS\ProjectUAS\obj\Debug\ProjectUAS.BOM.resources
 E:\Prokom UAS\ProjectUAS\ProjectUAS\obj\Debug\ProjectUAS.Pemesanan.resources
 E:\Prokom UAS\ProjectUAS\ProjectUAS\obj\Debug\ProjectUAS.Form_Logistik.resources
 C:\Users\ASUS\Documents\GitHub\ProjectUAS\obj\Debug\ProjectUAS.Form_Logistik.resources
+C:\Users\ASUS\Documents\GitHub\ProjectUAS\obj\Debug\ProjectUAS.Purchasing.resources

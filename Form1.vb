@@ -16,8 +16,6 @@
         Form_Logistik.Show()
     End Sub
 
-
-
     Public Property Stok_sport1 As Integer
         Get
             Return Stok_sport
@@ -34,6 +32,15 @@
             Stok_sedan = value
         End Set
     End Property
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Purchasing.Show()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Gudang_bahan_baku.Show()
+    End Sub
+
     Public Property Sedan_masuk1 As Integer
         Get
             Return Sedan_masuk

@@ -139,6 +139,13 @@
     </Compile>
     <Compile Include="Produksi.vb" />
     <Compile Include="produksi2.vb" />
+    <Compile Include="Purchase.vb" />
+    <Compile Include="Purchasing.Designer.vb">
+      <DependentUpon>Purchasing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Purchasing.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="BOM.resx">
@@ -167,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pemesanan.resx">
       <DependentUpon>Pemesanan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing.resx">
+      <DependentUpon>Purchasing.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

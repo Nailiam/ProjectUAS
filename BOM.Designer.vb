@@ -53,6 +53,7 @@ Partial Class BOM
         Me.txtpintusp = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -310,11 +311,21 @@ Partial Class BOM
         Me.ComboBox1.Size = New System.Drawing.Size(91, 21)
         Me.ComboBox1.TabIndex = 31
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(603, 383)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(93, 34)
+        Me.Button2.TabIndex = 32
+        Me.Button2.Text = "Save"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'BOM
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.txtpintusp)
@@ -384,4 +395,5 @@ Partial Class BOM
     Friend WithEvents txtpintusp As TextBox
     Friend WithEvents Label17 As Label
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Button2 As Button
 End Class
