@@ -38,25 +38,75 @@
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         For Each sv In clsbom.databasebom
-            krgbadansp.Text = badan - sv.badansport
-            krgpintusp.Text = pintu - sv.pintusport
-            krgrodasp.Text = roda - sv.rodasport
-            krgkursisp.Text = kursi - sv.kursisport
-            krgmesinsp.Text = mesin - sv.mesinsport
+            If sv.badansport <= (badan) Then
+                krgbadansp.Text = 0
+            Else
+                krgbadansp.Text = sv.badansport - badan
+            End If
+            If sv.pintusport <= pintu Then
+                krgpintusp.Text = 0
+            Else
+                krgpintusp.Text = sv.pintusport - pintu
+            End If
+            If sv.rodasport <= roda Then
+                krgrodasp.Text = 0
+            Else
+                krgrodasp.Text = sv.rodasport - roda
+            End If
+            If sv.kursisport <= kursi Then
+                krgkursisp.Text = 0
+            Else
+                krgkursisp.Text = sv.kursisport - kursi
+            End If
+            If sv.mesinsport <= mesin Then
+                krgmesinsp.Text = 0
+            Else
+                krgmesinsp.Text = sv.mesinsport - mesin
+            End If
         Next
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         For Each sv In clsbom.databasebom
-            krgbadansd.Text = badan1 - sv.badansedan
-            krgpintusd.Text = pintu1 - sv.pintusedan
-            krgrodasd.Text = roda1 - sv.rodasedan
-            krgkursisd.Text = kursi1 - sv.kursisedan
-            krgmesinsd.Text = mesin1 - sv.mesinsedan
+            If sv.badansedan <= badan1 Then
+                krgbadansd.Text = 0
+            Else
+                krgbadansd.Text = sv.badansedan - badan1
+            End If
+            If sv.pintusedan <= pintu1 Then
+                krgpintusd.Text = 0
+            Else
+                krgpintusd.Text = sv.pintusedan - pintu1
+            End If
+            If sv.rodasedan <= roda1 Then
+                krgrodasd.Text = 0
+            Else
+                krgrodasd.Text = sv.rodasedan - roda1
+            End If
+            If sv.kursisedan <= kursi1 Then
+                krgkursisd.Text = 0
+            Else
+                krgkursisd.Text = sv.kursisedan - kursi1
+            End If
+            If sv.mesinsedan <= mesin1 Then
+                krgmesinsd.Text = 0
+            Else
+                krgmesinsd.Text = sv.mesinsedan - mesin1
+            End If
         Next
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        For Each save In produksi2.database
+            Dim tanggalproduksi As DateTime
+            tanggalproduksi = Form_Produksi.DateTimePicker1.Text
+            ListView2.Items.Add(New ListViewItem(New String() {tanggalproduksi, save.badansport1, save.pintusport1, save.rodasport1,
+                                                 save.kursisport1, save.mesinsport1, save.badansedan1, save.pintusedan1,
+                                                 save.rodasedan1, save.kursisedan1, save.mesinsedan1}))
+        Next
     End Sub
 End Class

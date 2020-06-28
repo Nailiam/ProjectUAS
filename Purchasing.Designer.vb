@@ -78,6 +78,7 @@ Partial Class Purchasing
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label33 = New System.Windows.Forms.Label()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -112,7 +113,7 @@ Partial Class Purchasing
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(115, 74)
+        Me.ComboBox1.Location = New System.Drawing.Point(115, 75)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(65, 21)
         Me.ComboBox1.TabIndex = 3
@@ -301,14 +302,14 @@ Partial Class Purchasing
         '
         'rodasp
         '
-        Me.rodasp.Location = New System.Drawing.Point(109, 99)
+        Me.rodasp.Location = New System.Drawing.Point(109, 103)
         Me.rodasp.Name = "rodasp"
         Me.rodasp.Size = New System.Drawing.Size(55, 20)
         Me.rodasp.TabIndex = 9
         '
         'pintusp
         '
-        Me.pintusp.Location = New System.Drawing.Point(109, 72)
+        Me.pintusp.Location = New System.Drawing.Point(109, 76)
         Me.pintusp.Name = "pintusp"
         Me.pintusp.Size = New System.Drawing.Size(55, 20)
         Me.pintusp.TabIndex = 8
@@ -430,14 +431,14 @@ Partial Class Purchasing
         '
         'rodasd
         '
-        Me.rodasd.Location = New System.Drawing.Point(112, 94)
+        Me.rodasd.Location = New System.Drawing.Point(112, 98)
         Me.rodasd.Name = "rodasd"
         Me.rodasd.Size = New System.Drawing.Size(60, 20)
         Me.rodasd.TabIndex = 14
         '
         'pintusd
         '
-        Me.pintusd.Location = New System.Drawing.Point(112, 67)
+        Me.pintusd.Location = New System.Drawing.Point(112, 71)
         Me.pintusd.Name = "pintusd"
         Me.pintusd.Size = New System.Drawing.Size(60, 20)
         Me.pintusd.TabIndex = 13
@@ -580,7 +581,7 @@ Partial Class Purchasing
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(556, 393)
+        Me.Button4.Location = New System.Drawing.Point(568, 415)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(96, 37)
         Me.Button4.TabIndex = 21
@@ -596,12 +597,22 @@ Partial Class Purchasing
         Me.Label33.TabIndex = 22
         Me.Label33.Text = "Barang yang Harus Dibeli"
         '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(584, 374)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(67, 24)
+        Me.Button5.TabIndex = 23
+        Me.Button5.Text = "SAVE"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
         'Purchasing
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonShadow
         Me.ClientSize = New System.Drawing.Size(718, 464)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label33)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -693,4 +704,5 @@ Partial Class Purchasing
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Label33 As Label
+    Friend WithEvents Button5 As Button
 End Class
