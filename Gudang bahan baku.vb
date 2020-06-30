@@ -134,7 +134,7 @@
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         For Each save In produksi2.database
-            Dim tanggalproduksi As DateTime
+            Dim tanggalproduksi As String
             tanggalproduksi = Form_Produksi.DateTimePicker1.Text
             ListView2.Items.Add(New ListViewItem(New String() {tanggalproduksi, save.badansport1, save.pintusport1, save.rodasport1,
                                                  save.kursisport1, save.mesinsport1, save.badansedan1, save.pintusedan1,

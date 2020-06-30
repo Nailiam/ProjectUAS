@@ -29,7 +29,6 @@
             Next
         End If
     End Sub
-
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim statuspemesanan As String
         For Each pesan In clsPemesanan.database
@@ -41,6 +40,7 @@
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
         Form_Gudang_Barang_Jadi.Show()
+        Me.Close()
     End Sub
 
     Private Sub Form_Produksi_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -53,6 +53,7 @@
     End Sub
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         Gudang_bahan_baku.Show()
+        Me.Close()
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
