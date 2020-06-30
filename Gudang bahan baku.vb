@@ -17,7 +17,11 @@
         baku.savedata()
     End Sub
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-
+        For Each simpan In Purchase.database
+            ListView1.Items.Add(New ListViewItem(New String() {simpan.badansport2, simpan.pintusport2, simpan.rodasport2,
+                                                 simpan.kursisport2, simpan.mesinsport2, simpan.badansedan2, simpan.pintusedan2,
+                                                 simpan.rodasedan2, simpan.kursisedan2, simpan.mesinsedan2}))
+        Next
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -97,7 +101,35 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
+        Dim badan2 As Integer
+        Dim pintu2 As Integer
+        Dim roda2 As Integer
+        Dim kursi2 As Integer
+        Dim mesin2 As Integer
+        Dim badan3 As Integer
+        Dim pintu3 As Integer
+        Dim roda3 As Integer
+        Dim kursi3 As Integer
+        Dim mesin3 As Integer
+        For Each sv In clsbom.databasebom '
+            badan2 = sv.badansport
+            pintu2 = sv.pintusport
+            roda2 = sv.rodasport
+            kursi2 = sv.kursisport
+            mesin2 = sv.mesinsport
+        Next
+        For Each simpan In Purchase.database
+            badan3 = simpan.badansport2
+            pintu3 = simpan.pintusport2
+            roda3 = simpan.rodasport2
+            kursi3 = simpan.kursisport2
+            mesin3 = simpan.mesinsport2
+        Next
+        stokbadansp.Text = badan3 - badan2
+        stokpintusp.Text = pintu3 - pintu2
+        stokrodasp.Text = roda3 - roda2
+        stokkursisp.Text = kursi3 - kursi2
+        stokmesinsp.Text = mesin3 - mesin2
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
@@ -108,5 +140,45 @@
                                                  save.kursisport1, save.mesinsport1, save.badansedan1, save.pintusedan1,
                                                  save.rodasedan1, save.kursisedan1, save.mesinsedan1}))
         Next
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        Form_Produksi.Show()
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Purchasing.Show()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Dim badan4 As Integer
+        Dim pintu4 As Integer
+        Dim roda4 As Integer
+        Dim kursi4 As Integer
+        Dim mesin4 As Integer
+        Dim badan5 As Integer
+        Dim pintu5 As Integer
+        Dim roda5 As Integer
+        Dim kursi5 As Integer
+        Dim mesin5 As Integer
+        For Each sv In clsbom.databasebom '
+            badan4 = sv.badansedan
+            pintu4 = sv.pintusedan
+            roda4 = sv.rodasedan
+            kursi4 = sv.kursisedan
+            mesin4 = sv.mesinsedan
+        Next
+        For Each simpan In Purchase.database
+            badan5 = simpan.badansedan2
+            pintu5 = simpan.pintusedan2
+            roda5 = simpan.rodasedan2
+            kursi5 = simpan.kursisedan2
+            mesin5 = simpan.mesinsedan2
+        Next
+        stokbadansd.Text = badan5 - badan4
+        stokpintusd.Text = pintu5 - pintu4
+        stokrodasd.Text = roda5 - roda4
+        stokkursisd.Text = kursi5 - kursi4
+        stokmesinsd.Text = mesin5 - mesin4
     End Sub
 End Class

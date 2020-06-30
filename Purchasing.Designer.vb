@@ -28,12 +28,22 @@ Partial Class Purchasing
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lblsport4 = New System.Windows.Forms.Label()
+        Me.lblsport3 = New System.Windows.Forms.Label()
+        Me.lblsport2 = New System.Windows.Forms.Label()
+        Me.lblsport1 = New System.Windows.Forms.Label()
+        Me.lblsport = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.lblsedan4 = New System.Windows.Forms.Label()
+        Me.lblsedan3 = New System.Windows.Forms.Label()
+        Me.lblsedan2 = New System.Windows.Forms.Label()
+        Me.lblsedan1 = New System.Windows.Forms.Label()
+        Me.lblsedan = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -79,6 +89,19 @@ Partial Class Purchasing
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label33 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.Label36 = New System.Windows.Forms.Label()
+        Me.Label37 = New System.Windows.Forms.Label()
+        Me.Label38 = New System.Windows.Forms.Label()
+        Me.Label39 = New System.Windows.Forms.Label()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.Label42 = New System.Windows.Forms.Label()
+        Me.Label43 = New System.Windows.Forms.Label()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.Label45 = New System.Windows.Forms.Label()
+        Me.Label46 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -130,6 +153,16 @@ Partial Class Purchasing
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label38)
+        Me.GroupBox1.Controls.Add(Me.Label37)
+        Me.GroupBox1.Controls.Add(Me.Label36)
+        Me.GroupBox1.Controls.Add(Me.Label35)
+        Me.GroupBox1.Controls.Add(Me.Label34)
+        Me.GroupBox1.Controls.Add(Me.lblsport4)
+        Me.GroupBox1.Controls.Add(Me.lblsport3)
+        Me.GroupBox1.Controls.Add(Me.lblsport2)
+        Me.GroupBox1.Controls.Add(Me.lblsport1)
+        Me.GroupBox1.Controls.Add(Me.lblsport)
         Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.Label7)
@@ -141,6 +174,51 @@ Partial Class Purchasing
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Komponen Mobil Sport"
+        '
+        'lblsport4
+        '
+        Me.lblsport4.AutoSize = True
+        Me.lblsport4.Location = New System.Drawing.Point(116, 121)
+        Me.lblsport4.Name = "lblsport4"
+        Me.lblsport4.Size = New System.Drawing.Size(31, 13)
+        Me.lblsport4.TabIndex = 11
+        Me.lblsport4.Text = "5000"
+        '
+        'lblsport3
+        '
+        Me.lblsport3.AutoSize = True
+        Me.lblsport3.Location = New System.Drawing.Point(116, 97)
+        Me.lblsport3.Name = "lblsport3"
+        Me.lblsport3.Size = New System.Drawing.Size(25, 13)
+        Me.lblsport3.TabIndex = 10
+        Me.lblsport3.Text = "350"
+        '
+        'lblsport2
+        '
+        Me.lblsport2.AutoSize = True
+        Me.lblsport2.Location = New System.Drawing.Point(116, 74)
+        Me.lblsport2.Name = "lblsport2"
+        Me.lblsport2.Size = New System.Drawing.Size(25, 13)
+        Me.lblsport2.TabIndex = 9
+        Me.lblsport2.Text = "400"
+        '
+        'lblsport1
+        '
+        Me.lblsport1.AutoSize = True
+        Me.lblsport1.Location = New System.Drawing.Point(116, 51)
+        Me.lblsport1.Name = "lblsport1"
+        Me.lblsport1.Size = New System.Drawing.Size(25, 13)
+        Me.lblsport1.TabIndex = 8
+        Me.lblsport1.Text = "300"
+        '
+        'lblsport
+        '
+        Me.lblsport.AutoSize = True
+        Me.lblsport.Location = New System.Drawing.Point(116, 25)
+        Me.lblsport.Name = "lblsport"
+        Me.lblsport.Size = New System.Drawing.Size(31, 13)
+        Me.lblsport.TabIndex = 7
+        Me.lblsport.Text = "1500"
         '
         'Label11
         '
@@ -189,6 +267,16 @@ Partial Class Purchasing
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Label39)
+        Me.GroupBox2.Controls.Add(Me.Label40)
+        Me.GroupBox2.Controls.Add(Me.Label41)
+        Me.GroupBox2.Controls.Add(Me.Label42)
+        Me.GroupBox2.Controls.Add(Me.Label43)
+        Me.GroupBox2.Controls.Add(Me.lblsedan4)
+        Me.GroupBox2.Controls.Add(Me.lblsedan3)
+        Me.GroupBox2.Controls.Add(Me.lblsedan2)
+        Me.GroupBox2.Controls.Add(Me.lblsedan1)
+        Me.GroupBox2.Controls.Add(Me.lblsedan)
         Me.GroupBox2.Controls.Add(Me.Label12)
         Me.GroupBox2.Controls.Add(Me.Label13)
         Me.GroupBox2.Controls.Add(Me.Label8)
@@ -200,6 +288,51 @@ Partial Class Purchasing
         Me.GroupBox2.TabIndex = 6
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Komponen Mobil Sedan"
+        '
+        'lblsedan4
+        '
+        Me.lblsedan4.AutoSize = True
+        Me.lblsedan4.Location = New System.Drawing.Point(110, 121)
+        Me.lblsedan4.Name = "lblsedan4"
+        Me.lblsedan4.Size = New System.Drawing.Size(31, 13)
+        Me.lblsedan4.TabIndex = 16
+        Me.lblsedan4.Text = "2000"
+        '
+        'lblsedan3
+        '
+        Me.lblsedan3.AutoSize = True
+        Me.lblsedan3.Location = New System.Drawing.Point(110, 97)
+        Me.lblsedan3.Name = "lblsedan3"
+        Me.lblsedan3.Size = New System.Drawing.Size(25, 13)
+        Me.lblsedan3.TabIndex = 15
+        Me.lblsedan3.Text = "150"
+        '
+        'lblsedan2
+        '
+        Me.lblsedan2.AutoSize = True
+        Me.lblsedan2.Location = New System.Drawing.Point(111, 74)
+        Me.lblsedan2.Name = "lblsedan2"
+        Me.lblsedan2.Size = New System.Drawing.Size(25, 13)
+        Me.lblsedan2.TabIndex = 14
+        Me.lblsedan2.Text = "200"
+        '
+        'lblsedan1
+        '
+        Me.lblsedan1.AutoSize = True
+        Me.lblsedan1.Location = New System.Drawing.Point(110, 51)
+        Me.lblsedan1.Name = "lblsedan1"
+        Me.lblsedan1.Size = New System.Drawing.Size(25, 13)
+        Me.lblsedan1.TabIndex = 13
+        Me.lblsedan1.Text = "150"
+        '
+        'lblsedan
+        '
+        Me.lblsedan.AutoSize = True
+        Me.lblsedan.Location = New System.Drawing.Point(110, 25)
+        Me.lblsedan.Name = "lblsedan"
+        Me.lblsedan.Size = New System.Drawing.Size(25, 13)
+        Me.lblsedan.TabIndex = 12
+        Me.lblsedan.Text = "700"
         '
         'Label12
         '
@@ -551,28 +684,28 @@ Partial Class Purchasing
         '
         'sport
         '
-        Me.sport.Location = New System.Drawing.Point(568, 260)
+        Me.sport.Location = New System.Drawing.Point(583, 260)
         Me.sport.Name = "sport"
         Me.sport.Size = New System.Drawing.Size(83, 20)
         Me.sport.TabIndex = 17
         '
         'sedan
         '
-        Me.sedan.Location = New System.Drawing.Point(569, 289)
+        Me.sedan.Location = New System.Drawing.Point(583, 289)
         Me.sedan.Name = "sedan"
         Me.sedan.Size = New System.Drawing.Size(83, 20)
         Me.sedan.TabIndex = 18
         '
         'total
         '
-        Me.total.Location = New System.Drawing.Point(569, 316)
+        Me.total.Location = New System.Drawing.Point(583, 316)
         Me.total.Name = "total"
         Me.total.Size = New System.Drawing.Size(83, 20)
         Me.total.TabIndex = 19
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(569, 342)
+        Me.Button3.Location = New System.Drawing.Point(584, 342)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(83, 26)
         Me.Button3.TabIndex = 20
@@ -606,12 +739,132 @@ Partial Class Purchasing
         Me.Button5.Text = "SAVE"
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.Location = New System.Drawing.Point(99, 25)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(13, 13)
+        Me.Label34.TabIndex = 12
+        Me.Label34.Text = "$"
+        '
+        'Label35
+        '
+        Me.Label35.AutoSize = True
+        Me.Label35.Location = New System.Drawing.Point(99, 51)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(13, 13)
+        Me.Label35.TabIndex = 13
+        Me.Label35.Text = "$"
+        '
+        'Label36
+        '
+        Me.Label36.AutoSize = True
+        Me.Label36.Location = New System.Drawing.Point(99, 74)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(13, 13)
+        Me.Label36.TabIndex = 14
+        Me.Label36.Text = "$"
+        '
+        'Label37
+        '
+        Me.Label37.AutoSize = True
+        Me.Label37.Location = New System.Drawing.Point(99, 97)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(13, 13)
+        Me.Label37.TabIndex = 15
+        Me.Label37.Text = "$"
+        '
+        'Label38
+        '
+        Me.Label38.AutoSize = True
+        Me.Label38.Location = New System.Drawing.Point(99, 121)
+        Me.Label38.Name = "Label38"
+        Me.Label38.Size = New System.Drawing.Size(13, 13)
+        Me.Label38.TabIndex = 16
+        Me.Label38.Text = "$"
+        '
+        'Label39
+        '
+        Me.Label39.AutoSize = True
+        Me.Label39.Location = New System.Drawing.Point(91, 25)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(13, 13)
+        Me.Label39.TabIndex = 17
+        Me.Label39.Text = "$"
+        '
+        'Label40
+        '
+        Me.Label40.AutoSize = True
+        Me.Label40.Location = New System.Drawing.Point(91, 51)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(13, 13)
+        Me.Label40.TabIndex = 18
+        Me.Label40.Text = "$"
+        '
+        'Label41
+        '
+        Me.Label41.AutoSize = True
+        Me.Label41.Location = New System.Drawing.Point(91, 74)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(13, 13)
+        Me.Label41.TabIndex = 19
+        Me.Label41.Text = "$"
+        '
+        'Label42
+        '
+        Me.Label42.AutoSize = True
+        Me.Label42.Location = New System.Drawing.Point(91, 97)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(13, 13)
+        Me.Label42.TabIndex = 20
+        Me.Label42.Text = "$"
+        '
+        'Label43
+        '
+        Me.Label43.AutoSize = True
+        Me.Label43.Location = New System.Drawing.Point(91, 121)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(13, 13)
+        Me.Label43.TabIndex = 21
+        Me.Label43.Text = "$"
+        '
+        'Label44
+        '
+        Me.Label44.AutoSize = True
+        Me.Label44.Location = New System.Drawing.Point(564, 292)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(13, 13)
+        Me.Label44.TabIndex = 22
+        Me.Label44.Text = "$"
+        '
+        'Label45
+        '
+        Me.Label45.AutoSize = True
+        Me.Label45.Location = New System.Drawing.Point(564, 319)
+        Me.Label45.Name = "Label45"
+        Me.Label45.Size = New System.Drawing.Size(13, 13)
+        Me.Label45.TabIndex = 23
+        Me.Label45.Text = "$"
+        '
+        'Label46
+        '
+        Me.Label46.AutoSize = True
+        Me.Label46.Location = New System.Drawing.Point(564, 263)
+        Me.Label46.Name = "Label46"
+        Me.Label46.Size = New System.Drawing.Size(13, 13)
+        Me.Label46.TabIndex = 24
+        Me.Label46.Text = "$"
+        '
         'Purchasing
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonShadow
         Me.ClientSize = New System.Drawing.Size(718, 464)
+        Me.Controls.Add(Me.Label45)
+        Me.Controls.Add(Me.Label46)
+        Me.Controls.Add(Me.Label44)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label33)
         Me.Controls.Add(Me.Button4)
@@ -705,4 +958,27 @@ Partial Class Purchasing
     Friend WithEvents Button4 As Button
     Friend WithEvents Label33 As Label
     Friend WithEvents Button5 As Button
+    Friend WithEvents lblsport4 As Label
+    Friend WithEvents lblsport3 As Label
+    Friend WithEvents lblsport2 As Label
+    Friend WithEvents lblsport1 As Label
+    Friend WithEvents lblsport As Label
+    Friend WithEvents lblsedan4 As Label
+    Friend WithEvents lblsedan3 As Label
+    Friend WithEvents lblsedan2 As Label
+    Friend WithEvents lblsedan1 As Label
+    Friend WithEvents lblsedan As Label
+    Friend WithEvents Label38 As Label
+    Friend WithEvents Label37 As Label
+    Friend WithEvents Label36 As Label
+    Friend WithEvents Label35 As Label
+    Friend WithEvents Label34 As Label
+    Friend WithEvents Label39 As Label
+    Friend WithEvents Label40 As Label
+    Friend WithEvents Label41 As Label
+    Friend WithEvents Label42 As Label
+    Friend WithEvents Label43 As Label
+    Friend WithEvents Label44 As Label
+    Friend WithEvents Label45 As Label
+    Friend WithEvents Label46 As Label
 End Class
