@@ -119,11 +119,11 @@
             mesin2 = sv.mesinsport
         Next
         For Each simpan In Purchase.database
-            badan3 = simpan.badansport2
-            pintu3 = simpan.pintusport2
-            roda3 = simpan.rodasport2
-            kursi3 = simpan.kursisport2
-            mesin3 = simpan.mesinsport2
+            badan3 = simpan.badansport2 + badan
+            pintu3 = simpan.pintusport2 + pintu
+            roda3 = simpan.rodasport2 + roda
+            kursi3 = simpan.kursisport2 + kursi
+            mesin3 = simpan.mesinsport2 + mesin
         Next
         stokbadansp.Text = badan3 - badan2
         stokpintusp.Text = pintu3 - pintu2
@@ -169,11 +169,11 @@
             mesin4 = sv.mesinsedan
         Next
         For Each simpan In Purchase.database
-            badan5 = simpan.badansedan2
-            pintu5 = simpan.pintusedan2
-            roda5 = simpan.rodasedan2
-            kursi5 = simpan.kursisedan2
-            mesin5 = simpan.mesinsedan2
+            badan5 = simpan.badansedan2 + badan1
+            pintu5 = simpan.pintusedan2 + pintu1
+            roda5 = simpan.rodasedan2 + roda1
+            kursi5 = simpan.kursisedan2 + kursi1
+            mesin5 = simpan.mesinsedan2 + mesin1
         Next
         stokbadansd.Text = badan5 - badan4
         stokpintusd.Text = pintu5 - pintu4
