@@ -4,8 +4,8 @@
     Dim jumlahsport As Integer
     Private Sub Btnstok_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btnstok.Click
         For Each save In produksi2.database
-            Stok.Sport_masuk1 = jumlahsport
-            Stok.Sedan_masuk1 = jumlahsedan
+            Stok.Sport_masuk1 = save.jumlahsport
+            Stok.Sedan_masuk1 = save.jumlahsedan
         Next
         For Each kirim In clsLogistik.database
             Stok.Sport_keluar1 = kirim.jmlsport
@@ -18,11 +18,9 @@
     End Sub
 
     Private Sub Btninfomasuk_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btninfomasuk.Click
-        For Each pesan In clsPemesanan.database
-            jumlahsedan = clsPemesanan.database(0).mobilsedan + clsPemesanan.database(1).mobilsedan + clsPemesanan.database(2).mobilsedan
-            jumlahsport = clsPemesanan.database(0).mobilsport + clsPemesanan.database(1).mobilsport + clsPemesanan.database(2).mobilsport
+        For Each save In produksi2.database
+            ListView2.Items.Add(New ListViewItem(New String() {save.jumlahsedan, save.jumlahsport}))
         Next
-        ListView2.Items.Add(New ListViewItem(New String() {jumlahsedan, jumlahsport}))
     End Sub
 
     Private Sub Btninfokeluar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btninfokeluar.Click
