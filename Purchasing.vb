@@ -32,10 +32,10 @@ badansd.Text, pintusd.Text, rodasd.Text, kursisd.Text, mesinsd.Text, sport.Text,
         Next
         badan1 = Gudang_bahan_baku.stokbadansp.Text
         pintu1 = Gudang_bahan_baku.stokpintusp.Text
-            roda1 = Gudang_bahan_baku.stokrodasp.Text
-            kursi1 = Gudang_bahan_baku.stokkursisp.Text
-            mesin1 = Gudang_bahan_baku.stokmesinsp.Text
-            badansp.Text = (badan - badan1) + safetystok
+        roda1 = Gudang_bahan_baku.stokrodasp.Text
+        kursi1 = Gudang_bahan_baku.stokkursisp.Text
+        mesin1 = Gudang_bahan_baku.stokmesinsp.Text
+        badansp.Text = (badan - badan1) + safetystok
         pintusp.Text = (pintu - pintu1) + safetystok
         rodasp.Text = (roda - roda1) + safetystok
         kursisp.Text = (kursi - kursi1) + safetystok

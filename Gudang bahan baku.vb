@@ -15,6 +15,16 @@
        krgbadansp.Text, krgpintusp.Text, krgrodasp.Text, krgkursisp.Text, krgmesinsp.Text,
        krgbadansd.Text, krgpintusd.Text, krgrodasd.Text, krgkursisd.Text, krgmesinsd.Text)
         baku.savedata()
+        krgbadansd.Clear()
+        krgpintusd.Clear()
+        krgrodasd.Clear()
+        krgkursisd.Clear()
+        krgmesinsd.Clear()
+        krgbadansp.Clear()
+        krgpintusp.Clear()
+        krgrodasp.Clear()
+        krgkursisp.Clear()
+        krgmesinsp.Clear()
     End Sub
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         For Each simpan In Purchase.database

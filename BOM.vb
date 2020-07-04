@@ -44,4 +44,9 @@
 txtpintusd.Text, txtbadansd.Text, txtrodasd.Text, txtkursisd.Text, txtmesinsd.Text)
         sv.saveData()
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Gudang_bahan_baku.Show()
+        Me.Close()
+    End Sub
 End Class

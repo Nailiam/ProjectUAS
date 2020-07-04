@@ -13,6 +13,11 @@
         DateTimePicker1.Format = DateTimePickerFormat.Custom
         DateTimePicker1.CustomFormat = "dddd, dd/MM/yyyy"
         DateTimePicker1.Value = Format(Now)
+        txtnama.Clear()
+        txtalamat.Clear()
+        txtsport.Clear()
+        txtsedan.Clear()
+
     End Sub
     Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
         BOM.Show()

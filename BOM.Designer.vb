@@ -54,6 +54,7 @@ Partial Class BOM
         Me.Label17 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -313,18 +314,28 @@ Partial Class BOM
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(603, 383)
+        Me.Button2.Location = New System.Drawing.Point(452, 386)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(93, 34)
         Me.Button2.TabIndex = 32
         Me.Button2.Text = "Save"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(613, 384)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(137, 36)
+        Me.Button3.TabIndex = 33
+        Me.Button3.Text = "Gudang Bahan Baku>>>"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'BOM
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label17)
@@ -396,4 +407,5 @@ Partial Class BOM
     Friend WithEvents Label17 As Label
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class
