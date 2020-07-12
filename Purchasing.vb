@@ -86,5 +86,6 @@ badansd.Text, pintusd.Text, rodasd.Text, kursisd.Text, mesinsd.Text, sport.Text,
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Gudang_bahan_baku.Show()
+        Me.Close()
     End Sub
 End Class

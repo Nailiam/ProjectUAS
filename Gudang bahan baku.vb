@@ -154,6 +154,7 @@
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
         Form_Produksi.Show()
+        Me.Close()
     End Sub
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
